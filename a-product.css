@@ -1,0 +1,268 @@
+*{    
+    margin:0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing:border-box;
+}
+.Dont-Remove-Me{
+    flex: 1;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color:#ffeff3;
+}
+nav{
+    margin: 0 2rem 0 2rem;
+    width: 60rem;
+    background-color: #fff1ef;
+    border-radius: 8px;
+}
+
+nav ul{    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    
+}
+.logo{
+    background-image: url("logo.jpg");
+    background-size: cover;     
+    min-width: 60px;
+    height: 60px;
+    border-radius: 20px 10px;
+    border: 2px solid transparent;   
+    box-shadow: 5px 5px 10px;
+    margin-left: 1rem;    
+}
+.logo:hover{
+    border: 2px solid #ffeff3;
+    box-shadow: 6px 6px 15px;
+    
+}   
+.navbar a{
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(107, 76, 76); 
+    font-size: 1.7rem;
+    padding: 0 23p; 
+}
+.border{
+    border-radius: 5px;
+    line-height: 3.5rem;
+}
+.border:hover{        
+    border-bottom: 5px solid rgb(228, 161, 161);  
+}
+.menu-icon{
+    font-size: 3em;
+    margin-right: 1rem;
+    display: none;
+}
+/* END OF NAV */
+    
+/* featured products */
+.categories{
+    margin: 70px 0;
+}
+.small-container{
+    
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: #009aee; */
+}
+
+.col-4{
+    flex-basis: 24%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    background: 2px solid black;
+    
+}
+.col-4 img{
+    width: 100%;    
+}
+
+.title{
+    padding-top: 20PX;
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 80px;
+    color: #555;
+}
+.title::after{
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa, .fa-star-half-stroke, .fa-star{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+
+/* footer */
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 .img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-2 .img .logo{
+    background-size: cover;
+}
+.footer-col-3, .footer-col-1{
+    flex-basis: 12%;
+    text-align: center;
+}
+.footer ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-logo img{
+    
+    width: 140px;
+}
+.play-app-stor{
+    border-radius: 10px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px;
+}
+.copyright{
+    text-align: center;
+}
+.footer-col-2 .logo{
+    width: 2rem;
+}
+/* end of footer */
+@media only screen and (max-width: 1000px)
+{
+    .small-container .row-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .p{
+        font-size: 1rem;
+    }
+    .footer .footer-col-2{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 60px;        
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.511);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height  0.5s;
+    }
+    
+    .navbar a{
+        color: white;
+        font-size: 1.7rem;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
